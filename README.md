@@ -22,7 +22,7 @@ Our goal was to create a simple and useful website for new Holbies (Holberton st
     - 🎨[CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)(#)
 
 ## 📥 Run the Project
-🔗 Simply open the website using this link: Click [here]() to view the website
+🔗 Simply open the website using this link: Click [here](https://franck-dev-hub.github.io/holberton-hackathon-frejus-25/) to view the website
     
 ## 💡 How to Use
 Explore the website to:
