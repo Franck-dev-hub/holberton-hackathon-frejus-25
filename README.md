@@ -4,18 +4,18 @@ This project was built during the Holberton Hackathon Fréjus 2025 (24-hour chal
 Our goal was to create a simple and useful website for new Holbies (Holberton students), answering common questions they may have throughout their journey.
 
 ## The platform provides helpful information such as:
-    - 📅 Upcoming events
-    - 🧾 Administrative procedures
-    - 🎓 Program details
-    - ❓ FAQ and useful tips from fellow students
+- 📅 Upcoming events
+- 🧾 Administrative procedures
+- 🎓 Program details
+- ❓ FAQ and useful tips from fellow students
 
 ## 🚀 Getting Started
 ### ✅ Prerequisites
-    A modern and up-to-date web browser (Chrome, Firefox, Safari, etc.)
-    Platform tested on:
-        - ✅ Arch Linux
-        - ✅ Windows
-        - ✅ macOS
+A modern and up-to-date web browser (Chrome, Firefox, Safari, etc.)
+Platform tested on:
+- ✅ Arch Linux
+- ✅ Windows
+- ✅ macOS
 
 ## 🛠️ Technologies Used
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](#)
@@ -26,12 +26,9 @@ Our goal was to create a simple and useful website for new Holbies (Holberton st
     
 ## 💡 How to Use
 Explore the website to:
-    - Learn more about Holberton life
-    - Find helpful resources
-    - Connect with the student community
-
-## 📁 Project Structure
-
+- Learn more about Holberton life
+- Find helpful resources
+- Connect with the student community
 
 ## 👥 Authors
     - 👤 [Franck S.](https://github.com/Franck-dev-hub)
