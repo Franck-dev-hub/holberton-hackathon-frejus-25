@@ -121,30 +121,143 @@
             </div>
         </div>
 
-        <!-- Chat/Forum en direct -->
-        <div class="chat-section">
-            <h2>💬 Chat étudiant</h2>
-            <div class="chat-container">
-                <div class="chat-messages" id="chatMessages">
-                    <div class="message">
-                        <span class="user">Alice:</span>
-                        <span class="text">Salut ! Quelqu'un peut m'aider avec Betty ?</span>
-                        <span class="time">14:32</span>
-                    </div>
-                    <div class="message">
-                        <span class="user">Bob:</span>
-                        <span class="text">Bien sûr ! Quel est ton problème ?</span>
-                        <span class="time">14:35</span>
-                    </div>
-                    <div class="message">
-                        <span class="user">Charlie:</span>
-                        <span class="text">N'oubliez pas l'événement de demain ! 🎉</span>
-                        <span class="time">14:40</span>
+        <!-- Topic du jour -->
+        <div class="topic-section">
+            <h2>� Topic du jour</h2>
+            <div class="topic-container">
+                <div class="current-topic" id="currentTopic">
+                    <div class="topic-post">
+                        <div class="topic-author">
+                            <img src="images.png" alt="Avatar" class="topic-avatar">
+                            <div class="author-info">
+                                <span class="author-name">Marie_DevJunior</span>
+                                <span class="author-status">Étudiant Holberton • Promo C28</span>
+                                <span class="post-time">Posté il y a 3h</span>
+                            </div>
+                            <div class="topic-category-badge">🔥 Tendance Tech</div>
+                        </div>
+                        <h3 class="topic-title">Intelligence Artificielle et Développement : L'avenir du code</h3>
+                        <div class="topic-content">
+                            <p class="topic-description">
+                                Salut la communauté ! 👋
+                                <br><br>
+                                Je me posais une question après avoir testé GitHub Copilot pendant quelques semaines... 
+                                Comment pensez-vous que l'IA va transformer notre façon de développer ? 
+                                <br><br>
+                                Personnellement, j'ai l'impression que ça change déjà beaucoup de choses :
+                                <br>• Copilot m'aide énormément pour les fonctions répétitives
+                                <br>• ChatGPT m'explique des concepts que je ne comprends pas
+                                <br>• Mais j'ai peur de devenir trop dépendant... 🤔
+                                <br><br>
+                                <strong>Vous utilisez quoi comme outils IA ? Est-ce que vous pensez qu'on va encore coder "à la main" dans 5 ans ?</strong>
+                                <br><br>
+                                Hâte de lire vos retours d'expérience ! 😊
+                            </p>
+                        </div>
+                        <div class="topic-stats">
+                            <span class="stat-item">👁️ 47 vues</span>
+                            <span class="stat-item">💬 3 réponses</span>
+                            <span class="stat-item">👍 12 likes</span>
+                        </div>
+                        <div class="topic-tags">
+                            <span class="tag">IA</span>
+                            <span class="tag">Développement</span>
+                            <span class="tag">GitHub Copilot</span>
+                            <span class="tag">Automatisation</span>
+                        </div>
                     </div>
                 </div>
-                <div class="chat-input-container">
-                    <input type="text" id="chatInput" placeholder="Tapez votre message..." class="chat-input">
-                    <button class="chat-send-btn">Envoyer</button>
+                <div class="topic-actions">
+                    <button class="topic-btn primary" id="newTopicBtn">🎲 Nouveau topic</button>
+                    <button class="topic-btn secondary" id="shareTopicBtn">📤 Partager</button>
+                </div>
+                
+                <!-- Section commentaires du forum -->
+                <div class="comments-section">
+                    <h4>💬 Discussion (3 commentaires)</h4>
+                    <div class="comments-list" id="commentsList">
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img src="images.png" alt="Avatar" class="comment-avatar">
+                                <div class="comment-info">
+                                    <span class="comment-author">Alex_Dev</span>
+                                    <span class="comment-time">Il y a 2h</span>
+                                </div>
+                                <div class="comment-actions">
+                                    <button class="comment-like">👍 5</button>
+                                    <button class="comment-reply">Répondre</button>
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                Personnellement, j'utilise GitHub Copilot depuis 6 mois et c'est impressionnant ! Ça m'aide surtout pour les fonctions répétitives et la documentation. Par contre, il faut toujours vérifier le code généré 🧐
+                            </div>
+                        </div>
+                        
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img src="images.png" alt="Avatar" class="comment-avatar">
+                                <div class="comment-info">
+                                    <span class="comment-author">Sarah_Code</span>
+                                    <span class="comment-time">Il y a 1h</span>
+                                </div>
+                                <div class="comment-actions">
+                                    <button class="comment-like">👍 8</button>
+                                    <button class="comment-reply">Répondre</button>
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                @Alex_Dev Totalement d'accord ! J'ajouterais que ChatGPT est aussi super utile pour expliquer des concepts complexes. Mais attention à ne pas devenir trop dépendant 💡
+                            </div>
+                        </div>
+                        
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img src="images.png" alt="Avatar" class="comment-avatar">
+                                <div class="comment-info">
+                                    <span class="comment-author">Thomas_Student</span>
+                                    <span class="comment-time">Il y a 30min</span>
+                                </div>
+                                <div class="comment-actions">
+                                    <button class="comment-like">👍 2</button>
+                                    <button class="comment-reply">Répondre</button>
+                                </div>
+                            </div>
+                            <div class="comment-content">
+                                Question pour les plus expérimentés : est-ce que les entreprises acceptent du code généré par IA pendant les stages ? 🤔
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="add-comment">
+                        <div class="comment-form">
+                            <img src="images.png" alt="Votre avatar" class="comment-avatar">
+                            <div class="comment-input-container">
+                                <textarea id="commentInput" placeholder="Partagez votre expérience ou posez une question..." class="comment-input"></textarea>
+                                <div class="comment-form-actions">
+                                    <button class="comment-submit" id="submitComment">💬 Commenter</button>
+                                    <span class="comment-tips">💡 Soyez respectueux et constructifs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="topic-suggestions">
+                    <h4>💭 Autres sujets populaires :</h4>
+                    <div class="suggestion-topics">
+                        <div class="mini-topic" onclick="loadTopic('clean-code')">
+                            <span class="mini-icon">✨</span>
+                            <span class="mini-title">Clean Code : Meilleures pratiques</span>
+                        </div>
+                        <div class="mini-topic" onclick="loadTopic('career')">
+                            <span class="mini-icon">🚀</span>
+                            <span class="mini-title">Première expérience professionnelle</span>
+                        </div>
+                        <div class="mini-topic" onclick="loadTopic('projects')">
+                            <span class="mini-icon">💼</span>
+                            <span class="mini-title">Portfolio et projets personnels</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -366,53 +479,363 @@
             }
         });
 
-        // Chat interactif (code existant)
-        const chatInput = document.getElementById('chatInput');
-        const chatMessages = document.getElementById('chatMessages');
-        const sendBtn = document.querySelector('.chat-send-btn');
+        // Topics et sujets de discussion
+        const topics = [
+            {
+                author: "Marie_DevJunior",
+                status: "Étudiant Holberton • C28",
+                time: "Posté il y a 3h",
+                category: "🔥 Tendance Tech",
+                title: "Intelligence Artificielle et Développement : L'avenir du code",
+                content: `Salut la communauté ! 👋
+                <br><br>
+                Je me posais une question après avoir testé GitHub Copilot pendant quelques semaines... 
+                Comment pensez-vous que l'IA va transformer notre façon de développer ? 
+                <br><br>
+                Personnellement, j'ai l'impression que ça change déjà beaucoup de choses :
+                <br>• Copilot m'aide énormément pour les fonctions répétitives
+                <br>• ChatGPT m'explique des concepts que je ne comprends pas
+                <br>• Mais j'ai peur de devenir trop dépendant... 🤔
+                <br><br>
+                <strong>Vous utilisez quoi comme outils IA ? Est-ce que vous pensez qu'on va encore coder "à la main" dans 5 ans ?</strong>
+                <br><br>
+                Hâte de lire vos retours d'expérience ! 😊`,
+                stats: { views: 47, replies: 3, likes: 12 },
+                tags: ["IA", "Développement", "GitHub Copilot", "Automatisation"]
+            },
+            {
+                author: "Lucas_CodeNewbie",
+                status: "Étudiant Holberton • C28",
+                time: "Posté il y a 5h",
+                category: "💼 Carrière",
+                title: "Premier stage en développement : Comment bien se préparer ?",
+                content: `Hello tout le monde ! 😅
+                <br><br>
+                Je stresse un peu... J'ai bientôt mes premiers entretiens pour un stage de développeur et je me demande si je suis vraiment prêt.
+                <br><br>
+                <strong>Questions que je me pose :</strong>
+                <br>• Qu'est-ce qu'il faut VRAIMENT mettre dans son CV ?
+                <br>• Comment se préparer aux entretiens techniques ?
+                <br>• Est-ce que Betty et les normes Holberton suffisent en entreprise ?
+                <br>• Faut-il connaître tous les frameworks ou juste être bon sur les bases ?
+                <br><br>
+                Ceux qui ont déjà fait des stages, vous avez des conseils ? Des retours d'expérience ?
+                <br><br>
+                Merci d'avance ! 🙏`,
+                stats: { views: 32, replies: 8, likes: 15 },
+                tags: ["Stage", "Entretien", "CV", "Carrière"]
+            },
+            {
+                author: "Sophie_CleanCoder",
+                status: "Étudiant Holberton • C29",
+                time: "Posté il y a 1j",
+                category: "✨ Best Practices",
+                title: "Clean Code : Écrire du code que votre futur vous remerciera",
+                content: `Coucou les devs ! ✨
+                <br><br>
+                Après 6 mois à Holberton, j'ai commencé à vraiment comprendre l'importance du clean code...
+                <br><br>
+                Au début je pensais que tant que ça marche, c'est bon. Mais quand j'ai dû reprendre un projet d'il y a 3 mois... 😱 J'ai rien compris à mon propre code !
+                <br><br>
+                <strong>Du coup, mes questions :</strong>
+                <br>• Comment vous nommez vos variables et fonctions ?
+                <br>• Vous commentez tout ou juste les parties complexes ?
+                <br>• Des règles d'or pour la lisibilité ?
+                <br>• Betty c'est bien, mais en vrai en entreprise c'est pareil ?
+                <br><br>
+                Partagez vos astuces ! Mon futur moi vous remerciera 😂`,
+                stats: { views: 28, replies: 12, likes: 9 },
+                tags: ["Clean Code", "Best Practices", "Maintenabilité", "Lisibilité"]
+            },
+            {
+                author: "Thomas_Portfolio",
+                status: "Étudiant Holberton • C28",
+                time: "Posté il y a 2j",
+                category: "🚀 Projets",
+                title: "Portfolio de développeur : Quels projets inclure ?",
+                content: `Yo la team ! 🚀
+                <br><br>
+                Je suis en train de bosser sur mon portfolio et je galère un peu sur la sélection...
+                <br><br>
+                J'ai fait pas mal de projets à Holberton mais je sais pas lesquels mettre en avant. Certains sont cool mais le code est moyen, d'autres ont un bon code mais sont pas très impressionnants visuellement...
+                <br><br>
+                <strong>Vos avis :</strong>
+                <br>• Mieux vaut 3 projets au top ou 6 projets corrects ?
+                <br>• Faut-il forcément des projets full-stack ?
+                <br>• Les projets d'école ça compte ou il faut que du perso ?
+                <br>• GitHub README bien détaillé = indispensable ?
+                <br><br>
+                Des exemples de portfolios qui vous ont marqués ? 👀`,
+                stats: { views: 51, replies: 6, likes: 18 },
+                tags: ["Portfolio", "Projets", "GitHub", "Recrutement"]
+            },
+            {
+                author: "Emma_VSCodeLover",
+                status: "Étudiant Holberton • C29",
+                time: "Posté il y a 3j",
+                category: "🔧 Outils",
+                title: "VS Code vs autres éditeurs : Le grand débat",
+                content: `Hey les codeurs ! 💻
+                <br><br>
+                Petite question existentielle du vendredi soir... On utilise tous VS Code à Holberton, mais je me demande si c'est vraiment LE meilleur éditeur ?
+                <br><br>
+                J'ai testé Vim par curiosité et... j'ai survécu ! 😅 Neovim a l'air intéressant aussi. Et j'entends parler de Cursor pour l'IA...
+                <br><br>
+                <strong>Team VS Code, vous utilisez quoi comme extensions indispensables ?</strong>
+                <br>• Prettier/ESLint obligatoires ?
+                <br>• Live Server pour le front ?
+                <br>• GitHub Copilot en premium ?
+                <br><br>
+                Et ceux qui ont testé autre chose, ça vaut le coup de switcher ? 🤔`,
+                stats: { views: 39, replies: 15, likes: 7 },
+                tags: ["VS Code", "Éditeur", "Productivité", "Extensions"]
+            },
+            {
+                author: "Kevin_FullStack",
+                status: "Étudiant Holberton • C29",
+                time: "Posté il y a 4j",
+                category: "🌐 Web Dev",
+                title: "Frontend vs Backend : Où se spécialiser en 2025 ?",
+                content: `Salut à tous ! 🌐
+                <br><br>
+                Bon, je suis arrivé au moment où il faut choisir sa spécialisation et je suis complètement perdu...
+                <br><br>
+                J'aime bien les deux côtés : faire des interfaces stylées avec React c'est satisfaisant, mais la logique backend avec les APIs et les bases de données c'est passionnant aussi !
+                <br><br>
+                <strong>Questions pour les pros :</strong>
+                <br>• Le marché recrute plus côté front ou back en ce moment ?
+                <br>• Full-stack c'est vraiment possible ou on reste moyen partout ?
+                <br>• React/Vue/Angular : lequel apprendre en premier ?
+                <br>• Node.js vs Python vs Go pour le backend ?
+                <br><br>
+                Vos retours d'expérience stage/job m'aideraient beaucoup ! 🙏`,
+                stats: { views: 44, replies: 11, likes: 13 },
+                tags: ["Frontend", "Backend", "Spécialisation", "Frameworks"]
+            }
+        ];
 
-        function addMessage(user, text) {
-            const message = document.createElement('div');
-            message.className = 'message';
-            const now = new Date();
-            const time = now.getHours().toString().padStart(2, '0') + ':' + 
-                        now.getMinutes().toString().padStart(2, '0');
-            
-            message.innerHTML = `
-                <span class="user">${user}:</span>
-                <span class="text">${text}</span>
-                <span class="time">${time}</span>
-            `;
-            
-            chatMessages.appendChild(message);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
+        const specialTopics = {
+            'clean-code': {
+                author: "Sophie_CleanCoder",
+                status: "Étudiant Holberton • C29",
+                time: "Posté il y a 1j",
+                category: "✨ Best Practices", 
+                title: "Clean Code : Écrire du code que votre futur vous remerciera",
+                content: `Coucou les devs ! ✨
+                <br><br>
+                Après 6 mois à Holberton, j'ai commencé à vraiment comprendre l'importance du clean code...
+                <br><br>
+                Au début je pensais que tant que ça marche, c'est bon. Mais quand j'ai dû reprendre un projet d'il y a 3 mois... 😱 J'ai rien compris à mon propre code !
+                <br><br>
+                <strong>Du coup, mes questions :</strong>
+                <br>• Comment vous nommez vos variables et fonctions ?
+                <br>• Vous commentez tout ou juste les parties complexes ?
+                <br>• Des règles d'or pour la lisibilité ?
+                <br>• Betty c'est bien, mais en vrai en entreprise c'est pareil ?
+                <br><br>
+                Partagez vos astuces ! Mon futur moi vous remerciera 😂`,
+                stats: { views: 28, replies: 12, likes: 9 },
+                tags: ["Clean Code", "Best Practices", "Maintenabilité", "Lisibilité"]
+            },
+            'career': {
+                author: "Lucas_CodeNewbie",
+                status: "Étudiant Holberton • C28",
+                time: "Posté il y a 5h",
+                category: "💼 Carrière",
+                title: "Premier stage en développement : Comment bien se préparer ?", 
+                content: `Hello tout le monde ! 😅
+                <br><br>
+                Je stresse un peu... J'ai bientôt mes premiers entretiens pour un stage de développeur et je me demande si je suis vraiment prêt.
+                <br><br>
+                <strong>Questions que je me pose :</strong>
+                <br>• Qu'est-ce qu'il faut VRAIMENT mettre dans son CV ?
+                <br>• Comment se préparer aux entretiens techniques ?
+                <br>• Est-ce que Betty et les normes Holberton suffisent en entreprise ?
+                <br>• Faut-il connaître tous les frameworks ou juste être bon sur les bases ?
+                <br><br>
+                Ceux qui ont déjà fait des stages, vous avez des conseils ? Des retours d'expérience ?
+                <br><br>
+                Merci d'avance ! 🙏`,
+                stats: { views: 32, replies: 8, likes: 15 },
+                tags: ["Stage", "Entretien", "CV", "Carrière"]
+            },
+            'projects': {
+                author: "Thomas_Portfolio",
+                status: "Étudiant Holberton • C28",
+                time: "Posté il y a 2j",
+                category: "🚀 Projets",
+                title: "Portfolio de développeur : Quels projets inclure ?",
+                content: `Yo la team ! 🚀
+                <br><br>
+                Je suis en train de bosser sur mon portfolio et je galère un peu sur la sélection...
+                <br><br>
+                J'ai fait pas mal de projets à Holberton mais je sais pas lesquels mettre en avant. Certains sont cool mais le code est moyen, d'autres ont un bon code mais sont pas très impressionnants visuellement...
+                <br><br>
+                <strong>Vos avis :</strong>
+                <br>• Mieux vaut 3 projets au top ou 6 projets corrects ?
+                <br>• Faut-il forcément des projets full-stack ?
+                <br>• Les projets d'école ça compte ou il faut que du perso ?
+                <br>• GitHub README bien détaillé = indispensable ?
+                <br><br>
+                Des exemples de portfolios qui vous ont marqués ? 👀`,
+                stats: { views: 51, replies: 6, likes: 18 },
+                tags: ["Portfolio", "Projets", "GitHub", "Recrutement"]
+            }
+        };
 
-        function sendMessage() {
-            const text = chatInput.value.trim();
-            if (text) {
-                addMessage('Vous', text);
-                chatInput.value = '';
-                
-                // Réponse automatique après 1 seconde
-                setTimeout(() => {
-                    const responses = [
-                        'Merci pour votre message !',
-                        'C\'est une bonne question !',
-                        'Je vais regarder ça 👍',
-                        'Excellente idée !',
-                        'N\'hésitez pas si vous avez d\'autres questions !'
-                    ];
-                    const randomResponse = responses[Math.floor(Math.random() * responses.length)];
-                    addMessage('Assistant', randomResponse);
-                }, 1000);
+        function loadTopic(topicKey) {
+            const topic = specialTopics[topicKey];
+            if (topic) {
+                updateTopicDisplay(topic);
             }
         }
 
-        sendBtn.addEventListener('click', sendMessage);
-        chatInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                sendMessage();
+        function updateTopicDisplay(topic) {
+            const currentTopic = document.getElementById('currentTopic');
+            
+            currentTopic.innerHTML = `
+                <div class="topic-post">
+                    <div class="topic-author">
+                        <img src="images.png" alt="Avatar" class="topic-avatar">
+                        <div class="author-info">
+                            <span class="author-name">${topic.author}</span>
+                            <span class="author-status">${topic.status}</span>
+                            <span class="post-time">${topic.time}</span>
+                        </div>
+                        <div class="topic-category-badge">${topic.category}</div>
+                    </div>
+                    <h3 class="topic-title">${topic.title}</h3>
+                    <div class="topic-content">
+                        <p class="topic-description">${topic.content}</p>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="stat-item">👁️ ${topic.stats.views} vues</span>
+                        <span class="stat-item">💬 ${topic.stats.replies} réponses</span>
+                        <span class="stat-item">👍 ${topic.stats.likes} likes</span>
+                    </div>
+                    <div class="topic-tags">
+                        ${topic.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function generateNewTopic() {
+            const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+            updateTopicDisplay(randomTopic);
+        }
+
+        function shareTopic() {
+            const title = document.querySelector('.topic-title').textContent;
+            const text = `🎯 Topic du jour sur Holberton School : "${title}"`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Topic Holberton School',
+                    text: text,
+                    url: window.location.href
+                });
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(text + ' - ' + window.location.href)
+                    .then(() => alert('Topic copié dans le presse-papiers !'));
+            } else {
+                alert('Fonctionnalité de partage non disponible sur ce navigateur');
+            }
+        }
+
+        // Event listeners pour les topics
+        document.getElementById('newTopicBtn').addEventListener('click', generateNewTopic);
+        document.getElementById('shareTopicBtn').addEventListener('click', shareTopic);
+        
+        // Gestion des commentaires du forum
+        let commentCount = 3;
+        
+        function addComment() {
+            const commentInput = document.getElementById('commentInput');
+            const commentText = commentInput.value.trim();
+            
+            if (commentText.length < 10) {
+                alert('Votre commentaire doit contenir au moins 10 caractères');
+                return;
+            }
+            
+            const commentsList = document.getElementById('commentsList');
+            const newComment = document.createElement('div');
+            newComment.className = 'comment new-comment';
+            
+            const now = new Date();
+            const timeStr = 'À l\'instant';
+            
+            newComment.innerHTML = `
+                <div class="comment-header">
+                    <img src="images.png" alt="Avatar" class="comment-avatar">
+                    <div class="comment-info">
+                        <span class="comment-author">Vous</span>
+                        <span class="comment-time">${timeStr}</span>
+                    </div>
+                    <div class="comment-actions">
+                        <button class="comment-like">👍 0</button>
+                        <button class="comment-reply">Répondre</button>
+                    </div>
+                </div>
+                <div class="comment-content">${commentText}</div>
+            `;
+            
+            commentsList.appendChild(newComment);
+            commentInput.value = '';
+            commentCount++;
+            
+            // Mettre à jour le compteur
+            document.querySelector('.comments-section h4').textContent = `💬 Discussion (${commentCount} commentaires)`;
+            
+            // Animation d'apparition
+            setTimeout(() => {
+                newComment.classList.add('show');
+            }, 100);
+            
+            // Scroll vers le nouveau commentaire
+            newComment.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        function likeComment(button) {
+            const currentLikes = parseInt(button.textContent.match(/\d+/)[0]);
+            const newLikes = currentLikes + 1;
+            button.textContent = `👍 ${newLikes}`;
+            button.style.color = '#e53e3e';
+            button.disabled = true;
+            
+            // Animation de like
+            button.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                button.style.transform = 'scale(1)';
+            }, 200);
+        }
+        
+        function replyToComment(button) {
+            const comment = button.closest('.comment');
+            const author = comment.querySelector('.comment-author').textContent;
+            const commentInput = document.getElementById('commentInput');
+            
+            commentInput.value = `@${author} `;
+            commentInput.focus();
+            commentInput.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Event listeners pour les commentaires
+        document.getElementById('submitComment').addEventListener('click', addComment);
+        
+        document.getElementById('commentInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                addComment();
+            }
+        });
+        
+        // Délégation d'événements pour les boutons like et reply
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('comment-like')) {
+                likeComment(e.target);
+            } else if (e.target.classList.contains('comment-reply')) {
+                replyToComment(e.target);
             }
         });
     </script>
