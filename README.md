@@ -31,14 +31,14 @@ Explore the website to:
 - Connect with the student community
 
 ## 👥 Authors
-    - 👤 [Franck S.](https://github.com/Franck-dev-hub)
-    - 👤 [WassefRPZ](https://github.com/WassefRPZ)
-    - 👤 [Moha-A1](https://github.com/Moha-A1)
-    - 👤 [Guillaume de Chilly ]([](https://github.com/GuillaumedeChilly)
+- 👤 [Franck S.](https://github.com/Franck-dev-hub)
+- 👤 [WassefRPZ](https://github.com/WassefRPZ)
+- 👤 [Moha-A1](https://github.com/Moha-A1)
+- 👤 [Guillaume de Chilly ]([](https://github.com/GuillaumedeChilly)
 
 ## 📝 Version History
-    v1.0
-        - Initial release during the hackathon
+v1.0
+- Initial release during the hackathon
 
 ## 📜 License
 This project is licensed under the GNU GPL v3.0.
